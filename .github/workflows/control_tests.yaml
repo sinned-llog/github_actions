@@ -19,6 +19,12 @@ jobs:
           pip install pytest
           pip install flake8
 
+      
+      - name: Show repository files
+        run: |
+          pwd
+          ls -R
+
       - name: Run tests
         run: |
           pytest
